@@ -1,69 +1,38 @@
+"use client";
+import React from "react";
+import HeroSection from "../components/herosection";
 import Image from "next/image";
+import { Container, Row, Col } from "react-bootstrap";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div>
+      <main>
+        <HeroSection />
+        <div className={styles.content}>
+          <Container>
+            <Row className="align-items-center py-5">
+              <Col md={6} className="mb-4 mb-md-0">
+                <Image src="/images/image.jpg" alt="Deskripsi gambar" width={2000} height={2000} className="img-fluid rounded"
+                />
+              </Col>
+
+              <Col md={6}>
+                <h2 className={styles.h2}>About Us</h2>
+                <p className={styles.p}>
+                  We believe that every great moment deserves a delicious treat. At our bakery, we combine quality ingredients, passion, and craftsmanship to create freshly baked goods that bring joy to every bite. From classic pastries to unique creations, there&apos;s always something special waiting for you.
+                </p>
+              </Col>
+            </Row>
+          </Container>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <hr className={styles.hr}/>
+        <div className={styles.discover}>
+          <p className={styles.descBot}>Discover a wide selection of freshly baked delights, crafted to satisfy every craving and make every moment a little sweeter. Find your new favorite today!</p>
+          <a href="/product"><button className={styles.button}>Discover Products</button></a>
         </div>
       </main>
     </div>
-  );
+  )
 }

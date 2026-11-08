@@ -1,0 +1,61 @@
+/* Bar itself. Bootstrap 5.3 colors the links through these CSS variables */
+.navbar {
+    background-color: #fff4e6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    border-bottom: 2px solid #f7c65c;
+
+    --bs-navbar-color: #2c1200;
+    --bs-navbar-hover-color: #f7c65c;
+    --bs-navbar-active-color: #f7c65c;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 26px;
+  color: #bd9100;
+}
+
+.brand:hover {
+  color: #f7c65c;
+}
+
+.toggle {
+  border-color: #f7c65c;
+}
+
+.menu {
+    font-weight: 500;
+}
+
+.dropdown :global(.dropdown-menu) {
+    background-color: #fffaf3;
+    border-color: #f7c65c;
+    border-radius: 12px;
+}
+
+.dropdown :global(.dropdown-item:hover) {
+    background-color: #ffe4c4;
+    color: #72530f;
+}
+
+.searchInput {
+    border-radius: 20px;
+    border: 1px solid #f7c65c;
+}
+
+.searchInput:focus {
+    border-color: #f7c65c;
+}
+
+.searchButton {
+    color: #2c1200;
+    background-color: #ffe4c4;
+    border-color: #f7c65c;
+    border-radius: 20px;
+}
+
+.searchButton:hover {
+    background-color: #a0852d;
+    border-color: #a0852d;
+}
