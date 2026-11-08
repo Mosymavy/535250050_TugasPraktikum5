@@ -11,17 +11,17 @@
 }
 
 .brand {
-  font-weight: 700;
-  font-size: 26px;
-  color: #bd9100;
+    font-weight: 700;
+    font-size: 26px;
+    color: #bd9100;
 }
 
 .brand:hover {
-  color: #f7c65c;
+    color: #f7c65c;
 }
 
 .toggle {
-  border-color: #f7c65c;
+    border-color: #f7c65c;
 }
 
 .menu {

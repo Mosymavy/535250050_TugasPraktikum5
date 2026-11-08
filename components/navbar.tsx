@@ -19,14 +19,14 @@ function navbar() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/">Home</Nav.Link>
+                        <Nav.Link href="#home">Home</Nav.Link>
                         <NavDropdown title="Discover" id="navbarScrollingDropDown" className={styles.dropdown}>
-                            <NavDropdown.Item href="/product">Products</NavDropdown.Item>
-                            <NavDropdown.Item href="/location">Location</NavDropdown.Item>
+                            <NavDropdown.Item href="#product">Products</NavDropdown.Item>
+                            <NavDropdown.Item href="#location">Location</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="/promo">Promos</NavDropdown.Item>
+                            <NavDropdown.Item href="#promo">Promos</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/about">About</Nav.Link>
+                        <Nav.Link href="#about">About</Nav.Link>
                     </Nav>
                     <Form className="d-flex">
                         <Form.Control

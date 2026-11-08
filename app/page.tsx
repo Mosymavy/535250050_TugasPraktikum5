@@ -30,7 +30,7 @@ export default function Home() {
         <hr className={styles.hr}/>
         <div className={styles.discover}>
           <p className={styles.descBot}>Discover a wide selection of freshly baked delights, crafted to satisfy every craving and make every moment a little sweeter. Find your new favorite today!</p>
-          <a href="/product"><button className={styles.button}>Discover Products</button></a>
+          <a href="#product"><button className={styles.button}>Discover Products</button></a>
         </div>
       </main>
     </div>
